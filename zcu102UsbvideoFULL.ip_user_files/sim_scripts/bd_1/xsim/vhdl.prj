@@ -1,0 +1,25 @@
+vhdl xil_defaultlib  \
+"../../../bd/bd_1/ip/bd_1_axi_gpio_0_0/sim/bd_1_axi_gpio_0_0.vhd" \
+"../../../bd/bd_1/ip/bd_1_axi_vdma_0_0/sim/bd_1_axi_vdma_0_0.vhd" \
+"../../../bd/bd_1/ip/bd_1_axi_gpio_0_1/sim/bd_1_axi_gpio_0_1.vhd" \
+"../../../bd/bd_1/ip/bd_1_v_proc_ss_0_0/bd_1/ip/ip_1/sim/bd_5959_psr0_0.vhd" \
+"../../../bd/bd_1/ip/bd_1_v_proc_ss_0_0/bd_1/ip/ip_2/sim/bd_5959_psr_aclk_0.vhd" \
+"../../../bd/bd_1/ip/bd_1_v_proc_ss_0_0/bd_1/ip/ip_3/sim/bd_5959_psr_aclk1_0.vhd" \
+"../../../bd/bd_1/ip/bd_1_v_proc_ss_0_0/bd_0/ip/ip_4/sim/bd_054c_rst_axis_0.vhd" \
+"../../../bd/bd_1/ip/bd_1_v_proc_ss_0_0/bd_0/ip/ip_5/sim/bd_054c_reset_sel_axis_0.vhd" \
+"../../../bd/bd_1/ip/bd_1_axi_smc_2/bd_0/ip/ip_1/sim/bd_3af7_psr_aclk_0.vhd" \
+"../../../bd/bd_1/ip/bd_1_axi_vdma_1_0/sim/bd_1_axi_vdma_1_0.vhd" \
+"../../../bd/bd_1/ip/bd_1_axi_smc_1_0/bd_0/ip/ip_1/sim/bd_c70f_psr_aclk_0.vhd" \
+"../../../bd/bd_1/ip/bd_1_axi_vdma_0_1/sim/bd_1_axi_vdma_0_1.vhd" \
+"../../../bd/bd_1/ip/bd_1_v_proc_ss_0_1/bd_1/ip/ip_1/sim/bd_3b3a_psr0_0.vhd" \
+"../../../bd/bd_1/ip/bd_1_v_proc_ss_0_1/bd_1/ip/ip_2/sim/bd_3b3a_psr_aclk_0.vhd" \
+"../../../bd/bd_1/ip/bd_1_v_proc_ss_0_1/bd_1/ip/ip_3/sim/bd_3b3a_psr_aclk1_0.vhd" \
+"../../../bd/bd_1/ip/bd_1_v_proc_ss_0_1/bd_0/ip/ip_4/sim/bd_c58d_rst_axis_0.vhd" \
+"../../../bd/bd_1/ip/bd_1_v_proc_ss_0_1/bd_0/ip/ip_5/sim/bd_c58d_reset_sel_axis_0.vhd" \
+"../../../bd/bd_1/ip/bd_1_axi_gpio_0_2/sim/bd_1_axi_gpio_0_2.vhd" \
+"../../../bd/bd_1/ip/bd_1_axi_smc_3/bd_0/ip/ip_1/sim/bd_fa36_psr_aclk_0.vhd" \
+"../../../bd/bd_1/ip/bd_1_rst_ps8_0_299M_3/sim/bd_1_rst_ps8_0_299M_3.vhd" \
+"../../../bd/bd_1/ip/bd_1_rst_ps8_0_99M_3/sim/bd_1_rst_ps8_0_99M_3.vhd" \
+
+# Do not sort compile order
+nosort

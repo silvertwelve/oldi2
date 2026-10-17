@@ -1,0 +1,754 @@
+
+*** Running vivado
+    with args -log bd_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_1_wrapper.tcl
+
+
+
+****** Vivado v2024.1.2 (64-bit)
+  **** SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
+  **** IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
+  **** SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
+  **** Start of session at: Wed Aug  5 04:37:17 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source bd_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2024.1/data/ip'.
+add_files: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 725.801 ; gain = 170.656
+Command: read_checkpoint -auto_incremental -incremental D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.srcs/utils_1/imports/synth_1/bd_1_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.srcs/utils_1/imports/synth_1/bd_1_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top bd_1_wrapper -part xczu9eg-ffvb1156-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu9eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu9eg'
+INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-e
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 11152
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2144.656 ; gain = 408.281
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_1_wrapper' [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/hdl/bd_1_wrapper.v:13]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/hdl/bd_1_wrapper.v:46]
+INFO: [Synth 8-6157] synthesizing module 'bd_1' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'bd_1_axis_combiner_0_1' [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_axis_combiner_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1_axis_combiner_0_1' (0#1) [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_axis_combiner_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_1_axis_data_fifo_0_0' [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_axis_data_fifo_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1_axis_data_fifo_0_0' (0#1) [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_axis_data_fifo_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_1_axis_data_fifo_1_0' [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_axis_data_fifo_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1_axis_data_fifo_1_0' (0#1) [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_axis_data_fifo_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_1_clk_wiz_0_0' [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_clk_wiz_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1_clk_wiz_0_0' (0#1) [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_clk_wiz_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'locked' of module 'bd_1_clk_wiz_0_0' is unconnected for instance 'clk_wiz_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:374]
+WARNING: [Synth 8-7023] instance 'clk_wiz_0' of module 'bd_1_clk_wiz_0_0' has 4 connections declared, but only 3 given [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:374]
+INFO: [Synth 8-6157] synthesizing module 'bd_1_lvds1to7_RTL_0_0' [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_lvds1to7_RTL_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1_lvds1to7_RTL_0_0' (0#1) [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_lvds1to7_RTL_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_1_lvds1to7_RTL_1_1' [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_lvds1to7_RTL_1_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1_lvds1to7_RTL_1_1' (0#1) [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_lvds1to7_RTL_1_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_1_openldi_to_axis_0_0' [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_openldi_to_axis_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1_openldi_to_axis_0_0' (0#1) [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_openldi_to_axis_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'hsync' of module 'bd_1_openldi_to_axis_0_0' is unconnected for instance 'openldi_to_axis_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:402]
+WARNING: [Synth 8-7071] port 'vsync' of module 'bd_1_openldi_to_axis_0_0' is unconnected for instance 'openldi_to_axis_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:402]
+WARNING: [Synth 8-7071] port 'de' of module 'bd_1_openldi_to_axis_0_0' is unconnected for instance 'openldi_to_axis_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:402]
+WARNING: [Synth 8-7071] port 'hsync_dly' of module 'bd_1_openldi_to_axis_0_0' is unconnected for instance 'openldi_to_axis_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:402]
+WARNING: [Synth 8-7071] port 'vsync_dly' of module 'bd_1_openldi_to_axis_0_0' is unconnected for instance 'openldi_to_axis_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:402]
+WARNING: [Synth 8-7071] port 'de_dly' of module 'bd_1_openldi_to_axis_0_0' is unconnected for instance 'openldi_to_axis_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:402]
+WARNING: [Synth 8-7023] instance 'openldi_to_axis_0' of module 'bd_1_openldi_to_axis_0_0' has 14 connections declared, but only 8 given [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:402]
+INFO: [Synth 8-6157] synthesizing module 'bd_1_openldi_to_axis_1_0' [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_openldi_to_axis_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1_openldi_to_axis_1_0' (0#1) [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_openldi_to_axis_1_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'hsync' of module 'bd_1_openldi_to_axis_1_0' is unconnected for instance 'openldi_to_axis_1' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:411]
+WARNING: [Synth 8-7071] port 'vsync' of module 'bd_1_openldi_to_axis_1_0' is unconnected for instance 'openldi_to_axis_1' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:411]
+WARNING: [Synth 8-7071] port 'de' of module 'bd_1_openldi_to_axis_1_0' is unconnected for instance 'openldi_to_axis_1' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:411]
+WARNING: [Synth 8-7071] port 'hsync_dly' of module 'bd_1_openldi_to_axis_1_0' is unconnected for instance 'openldi_to_axis_1' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:411]
+WARNING: [Synth 8-7071] port 'vsync_dly' of module 'bd_1_openldi_to_axis_1_0' is unconnected for instance 'openldi_to_axis_1' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:411]
+WARNING: [Synth 8-7071] port 'de_dly' of module 'bd_1_openldi_to_axis_1_0' is unconnected for instance 'openldi_to_axis_1' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:411]
+WARNING: [Synth 8-7023] instance 'openldi_to_axis_1' of module 'bd_1_openldi_to_axis_1_0' has 14 connections declared, but only 8 given [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:411]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:420]
+INFO: [Synth 8-6157] synthesizing module 'bd_1_system_ila_0_0' [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_system_ila_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1_system_ila_0_0' (0#1) [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_system_ila_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_1_util_idelay_ctrl_0_0' [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_util_idelay_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1_util_idelay_ctrl_0_0' (0#1) [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_util_idelay_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_1_util_vector_logic_0_0' [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1_util_vector_logic_0_0' (0#1) [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'v_tpg_ss_0_imp_R5K9IP' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:4070]
+INFO: [Synth 8-6157] synthesizing module 'bd_1_axi_gpio_0_0' [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1_axi_gpio_0_0' (0#1) [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_1_v_tpg_0_0' [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_v_tpg_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1_v_tpg_0_0' (0#1) [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_v_tpg_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'fid' of module 'bd_1_v_tpg_0_0' is unconnected for instance 'v_tpg_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:4278]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'bd_1_v_tpg_0_0' is unconnected for instance 'v_tpg_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:4278]
+WARNING: [Synth 8-7023] instance 'v_tpg_0' of module 'bd_1_v_tpg_0_0' has 31 connections declared, but only 29 given [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:4278]
+INFO: [Synth 8-6155] done synthesizing module 'v_tpg_ss_0_imp_R5K9IP' (0#1) [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:4070]
+WARNING: [Synth 8-7071] port 'gpio_io_o' of module 'v_tpg_ss_0_imp_R5K9IP' is unconnected for instance 'v_tpg_ss_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:440]
+WARNING: [Synth 8-7071] port 'm_axis_video_tdata' of module 'v_tpg_ss_0_imp_R5K9IP' is unconnected for instance 'v_tpg_ss_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:440]
+WARNING: [Synth 8-7071] port 'm_axis_video_tdest' of module 'v_tpg_ss_0_imp_R5K9IP' is unconnected for instance 'v_tpg_ss_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:440]
+WARNING: [Synth 8-7071] port 'm_axis_video_tid' of module 'v_tpg_ss_0_imp_R5K9IP' is unconnected for instance 'v_tpg_ss_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:440]
+WARNING: [Synth 8-7071] port 'm_axis_video_tkeep' of module 'v_tpg_ss_0_imp_R5K9IP' is unconnected for instance 'v_tpg_ss_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:440]
+WARNING: [Synth 8-7071] port 'm_axis_video_tlast' of module 'v_tpg_ss_0_imp_R5K9IP' is unconnected for instance 'v_tpg_ss_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:440]
+WARNING: [Synth 8-7071] port 'm_axis_video_tstrb' of module 'v_tpg_ss_0_imp_R5K9IP' is unconnected for instance 'v_tpg_ss_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:440]
+WARNING: [Synth 8-7071] port 'm_axis_video_tuser' of module 'v_tpg_ss_0_imp_R5K9IP' is unconnected for instance 'v_tpg_ss_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:440]
+WARNING: [Synth 8-7071] port 'm_axis_video_tvalid' of module 'v_tpg_ss_0_imp_R5K9IP' is unconnected for instance 'v_tpg_ss_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:440]
+WARNING: [Synth 8-7023] instance 'v_tpg_ss_0' of module 'v_tpg_ss_0_imp_R5K9IP' has 46 connections declared, but only 37 given [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:440]
+INFO: [Synth 8-6157] synthesizing module 'video_pipe_downscale_0_imp_TN68IR' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:4310]
+INFO: [Synth 8-6157] synthesizing module 'bd_1_axi_gpio_0_2' [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_axi_gpio_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1_axi_gpio_0_2' (0#1) [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_axi_gpio_0_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_1_axi_smc_3' [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_axi_smc_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1_axi_smc_3' (0#1) [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_axi_smc_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_1_axi_vdma_0_1' [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_axi_vdma_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1_axi_vdma_0_1' (0#1) [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_axi_vdma_0_1_stub.v:6]
+WARNING: [Synth 8-7071] port 's2mm_frame_ptr_out' of module 'bd_1_axi_vdma_0_1' is unconnected for instance 'axi_vdma_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:4806]
+WARNING: [Synth 8-7071] port 's2mm_introut' of module 'bd_1_axi_vdma_0_1' is unconnected for instance 'axi_vdma_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:4806]
+WARNING: [Synth 8-7023] instance 'axi_vdma_0' of module 'bd_1_axi_vdma_0_1' has 45 connections declared, but only 43 given [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:4806]
+INFO: [Synth 8-6157] synthesizing module 'bd_1_v_proc_ss_0_1' [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_v_proc_ss_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1_v_proc_ss_0_1' (0#1) [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_v_proc_ss_0_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'aresetn_io_axis' of module 'bd_1_v_proc_ss_0_1' is unconnected for instance 'v_proc_ss_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:4850]
+WARNING: [Synth 8-7023] instance 'v_proc_ss_0' of module 'bd_1_v_proc_ss_0_1' has 41 connections declared, but only 40 given [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:4850]
+INFO: [Synth 8-6155] done synthesizing module 'video_pipe_downscale_0_imp_TN68IR' (0#1) [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:4310]
+WARNING: [Synth 8-7071] port 'M_AXI_S2MM_awaddr' of module 'video_pipe_downscale_0_imp_TN68IR' is unconnected for instance 'video_pipe_downscale_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:478]
+WARNING: [Synth 8-7071] port 'M_AXI_S2MM_awburst' of module 'video_pipe_downscale_0_imp_TN68IR' is unconnected for instance 'video_pipe_downscale_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:478]
+WARNING: [Synth 8-7071] port 'M_AXI_S2MM_awcache' of module 'video_pipe_downscale_0_imp_TN68IR' is unconnected for instance 'video_pipe_downscale_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:478]
+WARNING: [Synth 8-7071] port 'M_AXI_S2MM_awlen' of module 'video_pipe_downscale_0_imp_TN68IR' is unconnected for instance 'video_pipe_downscale_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:478]
+WARNING: [Synth 8-7071] port 'M_AXI_S2MM_awprot' of module 'video_pipe_downscale_0_imp_TN68IR' is unconnected for instance 'video_pipe_downscale_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:478]
+WARNING: [Synth 8-7071] port 'M_AXI_S2MM_awready' of module 'video_pipe_downscale_0_imp_TN68IR' is unconnected for instance 'video_pipe_downscale_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:478]
+WARNING: [Synth 8-7071] port 'M_AXI_S2MM_awsize' of module 'video_pipe_downscale_0_imp_TN68IR' is unconnected for instance 'video_pipe_downscale_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:478]
+WARNING: [Synth 8-7071] port 'M_AXI_S2MM_awvalid' of module 'video_pipe_downscale_0_imp_TN68IR' is unconnected for instance 'video_pipe_downscale_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:478]
+WARNING: [Synth 8-7071] port 'M_AXI_S2MM_bready' of module 'video_pipe_downscale_0_imp_TN68IR' is unconnected for instance 'video_pipe_downscale_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:478]
+WARNING: [Synth 8-7071] port 'M_AXI_S2MM_bresp' of module 'video_pipe_downscale_0_imp_TN68IR' is unconnected for instance 'video_pipe_downscale_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:478]
+WARNING: [Synth 8-7071] port 'M_AXI_S2MM_bvalid' of module 'video_pipe_downscale_0_imp_TN68IR' is unconnected for instance 'video_pipe_downscale_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:478]
+WARNING: [Synth 8-7071] port 'M_AXI_S2MM_wdata' of module 'video_pipe_downscale_0_imp_TN68IR' is unconnected for instance 'video_pipe_downscale_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:478]
+WARNING: [Synth 8-7071] port 'M_AXI_S2MM_wlast' of module 'video_pipe_downscale_0_imp_TN68IR' is unconnected for instance 'video_pipe_downscale_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:478]
+WARNING: [Synth 8-7071] port 'M_AXI_S2MM_wready' of module 'video_pipe_downscale_0_imp_TN68IR' is unconnected for instance 'video_pipe_downscale_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:478]
+WARNING: [Synth 8-7071] port 'M_AXI_S2MM_wstrb' of module 'video_pipe_downscale_0_imp_TN68IR' is unconnected for instance 'video_pipe_downscale_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:478]
+WARNING: [Synth 8-7071] port 'M_AXI_S2MM_wvalid' of module 'video_pipe_downscale_0_imp_TN68IR' is unconnected for instance 'video_pipe_downscale_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:478]
+WARNING: [Synth 8-7071] port 'S_AXIS_S2MM_tdata' of module 'video_pipe_downscale_0_imp_TN68IR' is unconnected for instance 'video_pipe_downscale_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:478]
+WARNING: [Synth 8-7071] port 'S_AXIS_S2MM_tdest' of module 'video_pipe_downscale_0_imp_TN68IR' is unconnected for instance 'video_pipe_downscale_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:478]
+WARNING: [Synth 8-7071] port 'S_AXIS_S2MM_tid' of module 'video_pipe_downscale_0_imp_TN68IR' is unconnected for instance 'video_pipe_downscale_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:478]
+WARNING: [Synth 8-7071] port 'S_AXIS_S2MM_tkeep' of module 'video_pipe_downscale_0_imp_TN68IR' is unconnected for instance 'video_pipe_downscale_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:478]
+WARNING: [Synth 8-7071] port 'S_AXIS_S2MM_tlast' of module 'video_pipe_downscale_0_imp_TN68IR' is unconnected for instance 'video_pipe_downscale_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:478]
+WARNING: [Synth 8-7071] port 'S_AXIS_S2MM_tready' of module 'video_pipe_downscale_0_imp_TN68IR' is unconnected for instance 'video_pipe_downscale_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:478]
+WARNING: [Synth 8-7071] port 'S_AXIS_S2MM_tstrb' of module 'video_pipe_downscale_0_imp_TN68IR' is unconnected for instance 'video_pipe_downscale_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:478]
+WARNING: [Synth 8-7071] port 'S_AXIS_S2MM_tuser' of module 'video_pipe_downscale_0_imp_TN68IR' is unconnected for instance 'video_pipe_downscale_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:478]
+WARNING: [Synth 8-7071] port 'S_AXIS_S2MM_tvalid' of module 'video_pipe_downscale_0_imp_TN68IR' is unconnected for instance 'video_pipe_downscale_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:478]
+WARNING: [Synth 8-7071] port 's_axis_tready' of module 'video_pipe_downscale_0_imp_TN68IR' is unconnected for instance 'video_pipe_downscale_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:478]
+WARNING: [Synth 8-7023] instance 'video_pipe_downscale_0' of module 'video_pipe_downscale_0_imp_TN68IR' has 108 connections declared, but only 82 given [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:478]
+INFO: [Synth 8-6157] synthesizing module 'video_pipe_upscale_0_imp_1CT65NZ' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:4893]
+INFO: [Synth 8-6157] synthesizing module 'bd_1_axi_gpio_0_1' [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1_axi_gpio_0_1' (0#1) [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_1_axi_smc_2' [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_axi_smc_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1_axi_smc_2' (0#1) [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_axi_smc_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_1_axi_smc_1_0' [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_axi_smc_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1_axi_smc_1_0' (0#1) [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_axi_smc_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_1_axi_vdma_0_0' [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_axi_vdma_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1_axi_vdma_0_0' (0#1) [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_axi_vdma_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mm2s_frame_ptr_out' of module 'bd_1_axi_vdma_0_0' is unconnected for instance 'axi_vdma_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:5595]
+WARNING: [Synth 8-7071] port 's2mm_frame_ptr_out' of module 'bd_1_axi_vdma_0_0' is unconnected for instance 'axi_vdma_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:5595]
+WARNING: [Synth 8-7071] port 'mm2s_introut' of module 'bd_1_axi_vdma_0_0' is unconnected for instance 'axi_vdma_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:5595]
+WARNING: [Synth 8-7071] port 's2mm_introut' of module 'bd_1_axi_vdma_0_0' is unconnected for instance 'axi_vdma_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:5595]
+WARNING: [Synth 8-7023] instance 'axi_vdma_0' of module 'bd_1_axi_vdma_0_0' has 67 connections declared, but only 63 given [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:5595]
+INFO: [Synth 8-6157] synthesizing module 'bd_1_axi_vdma_1_0' [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_axi_vdma_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1_axi_vdma_1_0' (0#1) [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_axi_vdma_1_0_stub.v:6]
+WARNING: [Synth 8-7071] port 's2mm_frame_ptr_out' of module 'bd_1_axi_vdma_1_0' is unconnected for instance 'axi_vdma_1' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:5659]
+WARNING: [Synth 8-7071] port 's2mm_introut' of module 'bd_1_axi_vdma_1_0' is unconnected for instance 'axi_vdma_1' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:5659]
+WARNING: [Synth 8-7023] instance 'axi_vdma_1' of module 'bd_1_axi_vdma_1_0' has 45 connections declared, but only 43 given [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:5659]
+INFO: [Synth 8-6157] synthesizing module 'bd_1_v_proc_ss_0_0' [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_v_proc_ss_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1_v_proc_ss_0_0' (0#1) [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_v_proc_ss_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'aresetn_io_axis' of module 'bd_1_v_proc_ss_0_0' is unconnected for instance 'v_proc_ss_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:5703]
+WARNING: [Synth 8-7071] port 'm_axis_tdest' of module 'bd_1_v_proc_ss_0_0' is unconnected for instance 'v_proc_ss_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:5703]
+WARNING: [Synth 8-7071] port 'm_axis_tid' of module 'bd_1_v_proc_ss_0_0' is unconnected for instance 'v_proc_ss_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:5703]
+WARNING: [Synth 8-7071] port 'm_axis_tstrb' of module 'bd_1_v_proc_ss_0_0' is unconnected for instance 'v_proc_ss_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:5703]
+WARNING: [Synth 8-7023] instance 'v_proc_ss_0' of module 'bd_1_v_proc_ss_0_0' has 41 connections declared, but only 37 given [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:5703]
+INFO: [Synth 8-6155] done synthesizing module 'video_pipe_upscale_0_imp_1CT65NZ' (0#1) [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:4893]
+INFO: [Synth 8-6157] synthesizing module 'bd_1_vio_0_0' [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_vio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1_vio_0_0' (0#1) [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_vio_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'probe_out1' of module 'bd_1_vio_0_0' is unconnected for instance 'vio_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:690]
+WARNING: [Synth 8-7023] instance 'vio_0' of module 'bd_1_vio_0_0' has 9 connections declared, but only 8 given [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:690]
+INFO: [Synth 8-6157] synthesizing module 'zynq_us_ss_0_imp_GAE0EG' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:5743]
+INFO: [Synth 8-6157] synthesizing module 'bd_1_ps8_0_axi_periph_4' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:929]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_58UXLR' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:2425]
+INFO: [Synth 8-6157] synthesizing module 'bd_1_auto_cc_0' [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_auto_cc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1_auto_cc_0' (0#1) [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_auto_cc_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'bd_1_auto_cc_0' is unconnected for instance 'auto_cc' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:2588]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'bd_1_auto_cc_0' is unconnected for instance 'auto_cc' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:2588]
+WARNING: [Synth 8-7023] instance 'auto_cc' of module 'bd_1_auto_cc_0' has 42 connections declared, but only 40 given [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:2588]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_58UXLR' (0#1) [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:2425]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_13XFAP5' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:2631]
+INFO: [Synth 8-6157] synthesizing module 'bd_1_auto_cc_1' [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_auto_cc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1_auto_cc_1' (0#1) [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_auto_cc_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'bd_1_auto_cc_1' is unconnected for instance 'auto_cc' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:2794]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'bd_1_auto_cc_1' is unconnected for instance 'auto_cc' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:2794]
+WARNING: [Synth 8-7023] instance 'auto_cc' of module 'bd_1_auto_cc_1' has 42 connections declared, but only 40 given [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:2794]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_13XFAP5' (0#1) [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:2631]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_1VKIAEQ' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:2837]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_1VKIAEQ' (0#1) [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:2837]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_UO4BPG' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:2969]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_UO4BPG' (0#1) [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:2969]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_34K6MC' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:3094]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_34K6MC' (0#1) [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:3094]
+INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_15P8PGY' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:3240]
+INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_15P8PGY' (0#1) [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:3240]
+INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_1SZ01EX' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:3372]
+INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_1SZ01EX' (0#1) [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:3372]
+INFO: [Synth 8-6157] synthesizing module 'm07_couplers_imp_X24Y1R' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:3497]
+INFO: [Synth 8-6155] done synthesizing module 'm07_couplers_imp_X24Y1R' (0#1) [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:3497]
+INFO: [Synth 8-6157] synthesizing module 'm08_couplers_imp_9CJR1L' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:3643]
+INFO: [Synth 8-6155] done synthesizing module 'm08_couplers_imp_9CJR1L' (0#1) [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:3643]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1MWMU22' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:3768]
+INFO: [Synth 8-6157] synthesizing module 'bd_1_auto_pc_0' [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1_auto_pc_0' (0#1) [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1MWMU22' (0#1) [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:3768]
+INFO: [Synth 8-6157] synthesizing module 'bd_1_xbar_0' [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1_xbar_0' (0#1) [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_xbar_0_stub.v:6]
+WARNING: [Synth 8-689] width (24) of port connection 'm_axi_arprot' does not match port width (27) of module 'bd_1_xbar_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:2386]
+WARNING: [Synth 8-689] width (24) of port connection 'm_axi_awprot' does not match port width (27) of module 'bd_1_xbar_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:2390]
+WARNING: [Synth 8-689] width (32) of port connection 'm_axi_wstrb' does not match port width (36) of module 'bd_1_xbar_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:2402]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1_ps8_0_axi_periph_4' (0#1) [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:929]
+INFO: [Synth 8-6157] synthesizing module 'bd_1_rst_ps8_0_299M_3' [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_rst_ps8_0_299M_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1_rst_ps8_0_299M_3' (0#1) [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_rst_ps8_0_299M_3_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_1_rst_ps8_0_299M_3' is unconnected for instance 'rst_ps8_0_299M' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:6906]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_1_rst_ps8_0_299M_3' is unconnected for instance 'rst_ps8_0_299M' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:6906]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_1_rst_ps8_0_299M_3' is unconnected for instance 'rst_ps8_0_299M' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:6906]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'bd_1_rst_ps8_0_299M_3' is unconnected for instance 'rst_ps8_0_299M' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:6906]
+WARNING: [Synth 8-7023] instance 'rst_ps8_0_299M' of module 'bd_1_rst_ps8_0_299M_3' has 10 connections declared, but only 6 given [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:6906]
+INFO: [Synth 8-6157] synthesizing module 'bd_1_rst_ps8_0_99M_3' [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_rst_ps8_0_99M_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1_rst_ps8_0_99M_3' (0#1) [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_rst_ps8_0_99M_3_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_1_rst_ps8_0_99M_3' is unconnected for instance 'rst_ps8_0_99M' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:6913]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_1_rst_ps8_0_99M_3' is unconnected for instance 'rst_ps8_0_99M' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:6913]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_1_rst_ps8_0_99M_3' is unconnected for instance 'rst_ps8_0_99M' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:6913]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'bd_1_rst_ps8_0_99M_3' is unconnected for instance 'rst_ps8_0_99M' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:6913]
+WARNING: [Synth 8-7023] instance 'rst_ps8_0_99M' of module 'bd_1_rst_ps8_0_99M_3' has 10 connections declared, but only 6 given [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:6913]
+INFO: [Synth 8-6157] synthesizing module 'bd_1_zynq_ultra_ps_e_0_0' [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1_zynq_ultra_ps_e_0_0' (0#1) [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/.Xil/Vivado-11040-DESKTOP-OL9BOS2/realtime/bd_1_zynq_ultra_ps_e_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'maxigp2_awuser' of module 'bd_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:6920]
+WARNING: [Synth 8-7071] port 'maxigp2_aruser' of module 'bd_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:6920]
+WARNING: [Synth 8-7071] port 'saxigp0_bid' of module 'bd_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:6920]
+WARNING: [Synth 8-7071] port 'saxigp0_arready' of module 'bd_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:6920]
+WARNING: [Synth 8-7071] port 'saxigp0_rid' of module 'bd_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:6920]
+WARNING: [Synth 8-7071] port 'saxigp0_rdata' of module 'bd_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:6920]
+WARNING: [Synth 8-7071] port 'saxigp0_rresp' of module 'bd_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:6920]
+WARNING: [Synth 8-7071] port 'saxigp0_rlast' of module 'bd_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:6920]
+WARNING: [Synth 8-7071] port 'saxigp0_rvalid' of module 'bd_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:6920]
+WARNING: [Synth 8-7071] port 'saxigp2_bid' of module 'bd_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:6920]
+WARNING: [Synth 8-7071] port 'saxigp2_rid' of module 'bd_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:6920]
+WARNING: [Synth 8-7071] port 'saxigp3_bid' of module 'bd_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:6920]
+WARNING: [Synth 8-7071] port 'saxigp3_arready' of module 'bd_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:6920]
+WARNING: [Synth 8-7071] port 'saxigp3_rid' of module 'bd_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:6920]
+WARNING: [Synth 8-7071] port 'saxigp3_rdata' of module 'bd_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:6920]
+WARNING: [Synth 8-7071] port 'saxigp3_rresp' of module 'bd_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:6920]
+WARNING: [Synth 8-7071] port 'saxigp3_rlast' of module 'bd_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:6920]
+WARNING: [Synth 8-7071] port 'saxigp3_rvalid' of module 'bd_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:6920]
+WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'bd_1_zynq_ultra_ps_e_0_0' has 164 connections declared, but only 146 given [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:6920]
+INFO: [Synth 8-6155] done synthesizing module 'zynq_us_ss_0_imp_GAE0EG' (0#1) [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:5743]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1' (0#1) [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1_wrapper' (0#1) [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/hdl/bd_1_wrapper.v:13]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'vio_0'. This will prevent further optimization [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:690]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'system_ila_0'. This will prevent further optimization [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:420]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axis_data_fifo_1'. This will prevent further optimization [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:358]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axis_data_fifo_0'. This will prevent further optimization [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:342]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axis_combiner_0'. This will prevent further optimization [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:329]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'lvds1to7_RTL_1'. This will prevent further optimization [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:390]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'lvds1to7_RTL_0'. This will prevent further optimization [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:378]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'openldi_to_axis_1'. This will prevent further optimization [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:411]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'openldi_to_axis_0'. This will prevent further optimization [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/synth/bd_1.v:402]
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_1MWMU22 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_1MWMU22 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m08_couplers_imp_9CJR1L is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m08_couplers_imp_9CJR1L is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m08_couplers_imp_9CJR1L is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m08_couplers_imp_9CJR1L is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m07_couplers_imp_X24Y1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m07_couplers_imp_X24Y1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m07_couplers_imp_X24Y1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m07_couplers_imp_X24Y1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m06_couplers_imp_1SZ01EX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m06_couplers_imp_1SZ01EX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m06_couplers_imp_1SZ01EX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m06_couplers_imp_1SZ01EX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m05_couplers_imp_15P8PGY is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m05_couplers_imp_15P8PGY is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m05_couplers_imp_15P8PGY is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m05_couplers_imp_15P8PGY is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m04_couplers_imp_34K6MC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m04_couplers_imp_34K6MC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m04_couplers_imp_34K6MC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m04_couplers_imp_34K6MC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m03_couplers_imp_UO4BPG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m03_couplers_imp_UO4BPG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m03_couplers_imp_UO4BPG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m03_couplers_imp_UO4BPG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m02_couplers_imp_1VKIAEQ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m02_couplers_imp_1VKIAEQ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m02_couplers_imp_1VKIAEQ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m02_couplers_imp_1VKIAEQ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[39] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[38] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[37] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[36] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[35] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[34] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[33] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[32] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[31] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[30] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[29] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[28] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[27] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[26] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[25] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[24] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[23] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[22] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[21] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[20] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[19] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[18] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[17] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[16] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[15] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[14] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[13] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[12] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[11] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[10] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[9] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[39] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[38] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[37] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[36] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[35] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[34] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[33] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[32] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[31] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[30] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[29] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[28] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[27] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[26] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[25] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[24] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[23] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[22] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[21] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[20] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[19] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[18] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[17] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[16] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[15] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[14] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[13] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[12] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[11] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[10] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[9] in module m01_couplers_imp_13XFAP5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[39] in module m00_couplers_imp_58UXLR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[38] in module m00_couplers_imp_58UXLR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[37] in module m00_couplers_imp_58UXLR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[36] in module m00_couplers_imp_58UXLR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[35] in module m00_couplers_imp_58UXLR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[34] in module m00_couplers_imp_58UXLR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[33] in module m00_couplers_imp_58UXLR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[32] in module m00_couplers_imp_58UXLR is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2274.645 ; gain = 538.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2292.570 ; gain = 556.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2292.570 ; gain = 556.195
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 2300.613 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_v_tpg_0_0/bd_1_v_tpg_0_0/bd_1_v_tpg_0_0_in_context.xdc] for cell 'bd_1_i/v_tpg_ss_0/v_tpg_0'
+Finished Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_v_tpg_0_0/bd_1_v_tpg_0_0/bd_1_v_tpg_0_0_in_context.xdc] for cell 'bd_1_i/v_tpg_ss_0/v_tpg_0'
+Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_axi_gpio_0_0/bd_1_axi_gpio_0_0/bd_1_axi_gpio_0_0_in_context.xdc] for cell 'bd_1_i/v_tpg_ss_0/axi_gpio_0'
+Finished Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_axi_gpio_0_0/bd_1_axi_gpio_0_0/bd_1_axi_gpio_0_0_in_context.xdc] for cell 'bd_1_i/v_tpg_ss_0/axi_gpio_0'
+Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_axi_vdma_0_0/bd_1_axi_vdma_0_0/bd_1_axi_vdma_0_0_in_context.xdc] for cell 'bd_1_i/video_pipe_upscale_0/axi_vdma_0'
+Finished Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_axi_vdma_0_0/bd_1_axi_vdma_0_0/bd_1_axi_vdma_0_0_in_context.xdc] for cell 'bd_1_i/video_pipe_upscale_0/axi_vdma_0'
+Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_axi_gpio_0_1/bd_1_axi_gpio_0_1/bd_1_axi_gpio_0_2_in_context.xdc] for cell 'bd_1_i/video_pipe_upscale_0/axi_gpio_0'
+Finished Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_axi_gpio_0_1/bd_1_axi_gpio_0_1/bd_1_axi_gpio_0_2_in_context.xdc] for cell 'bd_1_i/video_pipe_upscale_0/axi_gpio_0'
+Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_v_proc_ss_0_0/bd_1_v_proc_ss_0_0/bd_1_v_proc_ss_0_0_in_context.xdc] for cell 'bd_1_i/video_pipe_upscale_0/v_proc_ss_0'
+Finished Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_v_proc_ss_0_0/bd_1_v_proc_ss_0_0/bd_1_v_proc_ss_0_0_in_context.xdc] for cell 'bd_1_i/video_pipe_upscale_0/v_proc_ss_0'
+Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_axi_smc_2/bd_1_axi_smc_2/bd_1_axi_smc_2_in_context.xdc] for cell 'bd_1_i/video_pipe_upscale_0/axi_smc'
+Finished Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_axi_smc_2/bd_1_axi_smc_2/bd_1_axi_smc_2_in_context.xdc] for cell 'bd_1_i/video_pipe_upscale_0/axi_smc'
+Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_axi_vdma_1_0/bd_1_axi_vdma_1_0/bd_1_axi_vdma_1_0_in_context.xdc] for cell 'bd_1_i/video_pipe_upscale_0/axi_vdma_1'
+Finished Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_axi_vdma_1_0/bd_1_axi_vdma_1_0/bd_1_axi_vdma_1_0_in_context.xdc] for cell 'bd_1_i/video_pipe_upscale_0/axi_vdma_1'
+Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_axi_smc_1_0/bd_1_axi_smc_1_0/bd_1_axi_smc_1_0_in_context.xdc] for cell 'bd_1_i/video_pipe_upscale_0/axi_smc_1'
+Finished Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_axi_smc_1_0/bd_1_axi_smc_1_0/bd_1_axi_smc_1_0_in_context.xdc] for cell 'bd_1_i/video_pipe_upscale_0/axi_smc_1'
+Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_axi_vdma_0_1/bd_1_axi_vdma_0_1/bd_1_axi_vdma_1_0_in_context.xdc] for cell 'bd_1_i/video_pipe_downscale_0/axi_vdma_0'
+Finished Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_axi_vdma_0_1/bd_1_axi_vdma_0_1/bd_1_axi_vdma_1_0_in_context.xdc] for cell 'bd_1_i/video_pipe_downscale_0/axi_vdma_0'
+Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_v_proc_ss_0_1/bd_1_v_proc_ss_0_1/bd_1_v_proc_ss_0_1_in_context.xdc] for cell 'bd_1_i/video_pipe_downscale_0/v_proc_ss_0'
+Finished Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_v_proc_ss_0_1/bd_1_v_proc_ss_0_1/bd_1_v_proc_ss_0_1_in_context.xdc] for cell 'bd_1_i/video_pipe_downscale_0/v_proc_ss_0'
+Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_axi_gpio_0_2/bd_1_axi_gpio_0_2/bd_1_axi_gpio_0_2_in_context.xdc] for cell 'bd_1_i/video_pipe_downscale_0/axi_gpio_0'
+Finished Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_axi_gpio_0_2/bd_1_axi_gpio_0_2/bd_1_axi_gpio_0_2_in_context.xdc] for cell 'bd_1_i/video_pipe_downscale_0/axi_gpio_0'
+Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_axi_smc_3/bd_1_axi_smc_3/bd_1_axi_smc_3_in_context.xdc] for cell 'bd_1_i/video_pipe_downscale_0/axi_smc'
+Finished Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_axi_smc_3/bd_1_axi_smc_3/bd_1_axi_smc_3_in_context.xdc] for cell 'bd_1_i/video_pipe_downscale_0/axi_smc'
+Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_rst_ps8_0_299M_3/bd_1_rst_ps8_0_299M_3/bd_054c_rst_axis_0_in_context.xdc] for cell 'bd_1_i/zynq_us_ss_0/rst_ps8_0_299M'
+Finished Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_rst_ps8_0_299M_3/bd_1_rst_ps8_0_299M_3/bd_054c_rst_axis_0_in_context.xdc] for cell 'bd_1_i/zynq_us_ss_0/rst_ps8_0_299M'
+Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_rst_ps8_0_99M_3/bd_1_rst_ps8_0_99M_3/bd_1_rst_ps8_0_99M_3_in_context.xdc] for cell 'bd_1_i/zynq_us_ss_0/rst_ps8_0_99M'
+Finished Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_rst_ps8_0_99M_3/bd_1_rst_ps8_0_99M_3/bd_1_rst_ps8_0_99M_3_in_context.xdc] for cell 'bd_1_i/zynq_us_ss_0/rst_ps8_0_99M'
+Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_zynq_ultra_ps_e_0_0/bd_1_zynq_ultra_ps_e_0_0/bd_1_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'bd_1_i/zynq_us_ss_0/zynq_ultra_ps_e_0'
+Finished Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_zynq_ultra_ps_e_0_0/bd_1_zynq_ultra_ps_e_0_0/bd_1_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'bd_1_i/zynq_us_ss_0/zynq_ultra_ps_e_0'
+Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_xbar_0/bd_1_xbar_0/bd_1_xbar_0_in_context.xdc] for cell 'bd_1_i/zynq_us_ss_0/ps8_0_axi_periph/xbar'
+Finished Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_xbar_0/bd_1_xbar_0/bd_1_xbar_0_in_context.xdc] for cell 'bd_1_i/zynq_us_ss_0/ps8_0_axi_periph/xbar'
+Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_auto_pc_0/bd_1_auto_pc_0/bd_1_auto_pc_0_in_context.xdc] for cell 'bd_1_i/zynq_us_ss_0/ps8_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_auto_pc_0/bd_1_auto_pc_0/bd_1_auto_pc_0_in_context.xdc] for cell 'bd_1_i/zynq_us_ss_0/ps8_0_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_auto_cc_0/bd_1_auto_cc_0/bd_1_auto_cc_0_in_context.xdc] for cell 'bd_1_i/zynq_us_ss_0/ps8_0_axi_periph/m00_couplers/auto_cc'
+Finished Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_auto_cc_0/bd_1_auto_cc_0/bd_1_auto_cc_0_in_context.xdc] for cell 'bd_1_i/zynq_us_ss_0/ps8_0_axi_periph/m00_couplers/auto_cc'
+Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_auto_cc_1/bd_1_auto_cc_1/bd_1_auto_cc_1_in_context.xdc] for cell 'bd_1_i/zynq_us_ss_0/ps8_0_axi_periph/m01_couplers/auto_cc'
+Finished Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_auto_cc_1/bd_1_auto_cc_1/bd_1_auto_cc_1_in_context.xdc] for cell 'bd_1_i/zynq_us_ss_0/ps8_0_axi_periph/m01_couplers/auto_cc'
+Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_clk_wiz_0_0/bd_1_clk_wiz_0_0/bd_1_clk_wiz_0_0_in_context.xdc] for cell 'bd_1_i/clk_wiz_0'
+Finished Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_clk_wiz_0_0/bd_1_clk_wiz_0_0/bd_1_clk_wiz_0_0_in_context.xdc] for cell 'bd_1_i/clk_wiz_0'
+Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_vio_0_0/bd_1_vio_0_0/bd_1_vio_0_0_in_context.xdc] for cell 'bd_1_i/vio_0'
+Finished Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_vio_0_0/bd_1_vio_0_0/bd_1_vio_0_0_in_context.xdc] for cell 'bd_1_i/vio_0'
+Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_util_idelay_ctrl_0_0/bd_1_util_idelay_ctrl_0_0/bd_1_util_idelay_ctrl_0_0_in_context.xdc] for cell 'bd_1_i/util_idelay_ctrl_0'
+Finished Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_util_idelay_ctrl_0_0/bd_1_util_idelay_ctrl_0_0/bd_1_util_idelay_ctrl_0_0_in_context.xdc] for cell 'bd_1_i/util_idelay_ctrl_0'
+Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_axis_data_fifo_0_0/bd_1_axis_data_fifo_0_0/bd_1_axis_data_fifo_0_0_in_context.xdc] for cell 'bd_1_i/axis_data_fifo_0'
+Finished Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_axis_data_fifo_0_0/bd_1_axis_data_fifo_0_0/bd_1_axis_data_fifo_0_0_in_context.xdc] for cell 'bd_1_i/axis_data_fifo_0'
+Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_openldi_to_axis_0_0/bd_1_openldi_to_axis_0_0/bd_1_openldi_to_axis_0_0_in_context.xdc] for cell 'bd_1_i/openldi_to_axis_0'
+Finished Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_openldi_to_axis_0_0/bd_1_openldi_to_axis_0_0/bd_1_openldi_to_axis_0_0_in_context.xdc] for cell 'bd_1_i/openldi_to_axis_0'
+Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_lvds1to7_RTL_0_0/bd_1_lvds1to7_RTL_0_0/bd_1_lvds1to7_RTL_0_0_in_context.xdc] for cell 'bd_1_i/lvds1to7_RTL_0'
+Finished Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_lvds1to7_RTL_0_0/bd_1_lvds1to7_RTL_0_0/bd_1_lvds1to7_RTL_0_0_in_context.xdc] for cell 'bd_1_i/lvds1to7_RTL_0'
+Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_lvds1to7_RTL_1_1/bd_1_lvds1to7_RTL_1_1/bd_1_lvds1to7_RTL_1_1_in_context.xdc] for cell 'bd_1_i/lvds1to7_RTL_1'
+Finished Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_lvds1to7_RTL_1_1/bd_1_lvds1to7_RTL_1_1/bd_1_lvds1to7_RTL_1_1_in_context.xdc] for cell 'bd_1_i/lvds1to7_RTL_1'
+Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_openldi_to_axis_1_0/bd_1_openldi_to_axis_1_0/bd_1_openldi_to_axis_1_0_in_context.xdc] for cell 'bd_1_i/openldi_to_axis_1'
+Finished Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_openldi_to_axis_1_0/bd_1_openldi_to_axis_1_0/bd_1_openldi_to_axis_1_0_in_context.xdc] for cell 'bd_1_i/openldi_to_axis_1'
+Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_axis_data_fifo_1_0/bd_1_axis_data_fifo_1_0/bd_1_axis_data_fifo_0_0_in_context.xdc] for cell 'bd_1_i/axis_data_fifo_1'
+Finished Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_axis_data_fifo_1_0/bd_1_axis_data_fifo_1_0/bd_1_axis_data_fifo_0_0_in_context.xdc] for cell 'bd_1_i/axis_data_fifo_1'
+Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_util_vector_logic_0_0/bd_1_util_vector_logic_0_0/bd_1_util_vector_logic_0_0_in_context.xdc] for cell 'bd_1_i/util_vector_logic_0'
+Finished Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_util_vector_logic_0_0/bd_1_util_vector_logic_0_0/bd_1_util_vector_logic_0_0_in_context.xdc] for cell 'bd_1_i/util_vector_logic_0'
+Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_axis_combiner_0_1/bd_1_axis_combiner_0_1/bd_1_axis_combiner_0_1_in_context.xdc] for cell 'bd_1_i/axis_combiner_0'
+Finished Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_axis_combiner_0_1/bd_1_axis_combiner_0_1/bd_1_axis_combiner_0_1_in_context.xdc] for cell 'bd_1_i/axis_combiner_0'
+Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_system_ila_0_0/bd_1_system_ila_0_0/bd_1_system_ila_0_0_in_context.xdc] for cell 'bd_1_i/system_ila_0'
+Finished Parsing XDC File [d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_system_ila_0_0/bd_1_system_ila_0_0/bd_1_system_ila_0_0_in_context.xdc] for cell 'bd_1_i/system_ila_0'
+Parsing XDC File [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.srcs/constrs_1/new/constr_1.xdc]
+WARNING: [Constraints 18-619] A clock with name 'user_si570_sysclk_clk_p' already exists, overwriting the previous clock with the same name. [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.srcs/constrs_1/new/constr_1.xdc:6]
+WARNING: [Vivado 12-507] No nets matched 'bd_1_i/lvds1to7_RTL_0/inst/rx_channel1/rx_clkdiv2'. [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.srcs/constrs_1/new/constr_1.xdc:35]
+WARNING: [Vivado 12-507] No nets matched 'bd_1_i/lvds1to7_RTL_0/inst/rx_channel1/rx_clkdiv8'. [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.srcs/constrs_1/new/constr_1.xdc:36]
+WARNING: [Vivado 12-508] No pins matched 'bd_1_i/lvds1to7_RTL_0/inst/rx_channel1/rxc_gen/iserdes_m/D'. [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.srcs/constrs_1/new/constr_1.xdc:38]
+WARNING: [Vivado 12-508] No pins matched 'bd_1_i/lvds1to7_RTL_0/inst/rx_channel1/rxc_gen/iserdes_s/D'. [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.srcs/constrs_1/new/constr_1.xdc:39]
+WARNING: [Vivado 12-508] No pins matched 'bd_1_i/lvds1to7_RTL_0/inst/rx_channel1/rxc_gen/px_reset_sync_reg[*]/PRE'. [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.srcs/constrs_1/new/constr_1.xdc:40]
+WARNING: [Vivado 12-508] No pins matched 'bd_1_i/lvds1to7_RTL_0/inst/rx_channel1/rxc_gen/px_rx_ready_sync_reg[*]/CLR'. [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.srcs/constrs_1/new/constr_1.xdc:41]
+WARNING: [Vivado 12-508] No pins matched 'bd_1_i/lvds1to7_RTL_0/inst/rx_channel1/rxc_gen/px_data_reg[*]/D'. [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.srcs/constrs_1/new/constr_1.xdc:42]
+WARNING: [Vivado 12-508] No pins matched 'bd_1_i/lvds1to7_RTL_0/inst/rx_channel1/rxc_gen/px_rd_last_reg[*]/D'. [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.srcs/constrs_1/new/constr_1.xdc:43]
+WARNING: [Vivado 12-508] No pins matched 'bd_1_i/lvds1to7_RTL_0/inst/rx_channel1/rxd[*].sipo/px_data_reg[*]/D'. [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.srcs/constrs_1/new/constr_1.xdc:44]
+WARNING: [Vivado 12-508] No pins matched 'bd_1_i/lvds1to7_RTL_0/inst/rx_channel1/rxd[*].sipo/px_rd_last_reg[*]/D'. [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.srcs/constrs_1/new/constr_1.xdc:45]
+WARNING: [Vivado 12-507] No nets matched 'bd_1_i/lvds1to7_RTL_1/inst/rx_channel1/rx_clkdiv2'. [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.srcs/constrs_1/new/constr_1.xdc:74]
+WARNING: [Vivado 12-507] No nets matched 'bd_1_i/lvds1to7_RTL_1/inst/rx_channel1/rx_clkdiv8'. [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.srcs/constrs_1/new/constr_1.xdc:75]
+WARNING: [Vivado 12-508] No pins matched 'bd_1_i/lvds1to7_RTL_1/inst/rx_channel1/rxc_gen/iserdes_m/D'. [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.srcs/constrs_1/new/constr_1.xdc:77]
+WARNING: [Vivado 12-508] No pins matched 'bd_1_i/lvds1to7_RTL_1/inst/rx_channel1/rxc_gen/iserdes_s/D'. [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.srcs/constrs_1/new/constr_1.xdc:78]
+WARNING: [Vivado 12-508] No pins matched 'bd_1_i/lvds1to7_RTL_1/inst/rx_channel1/rxc_gen/px_reset_sync_reg[*]/PRE'. [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.srcs/constrs_1/new/constr_1.xdc:79]
+WARNING: [Vivado 12-508] No pins matched 'bd_1_i/lvds1to7_RTL_1/inst/rx_channel1/rxc_gen/px_rx_ready_sync_reg[*]/CLR'. [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.srcs/constrs_1/new/constr_1.xdc:80]
+WARNING: [Vivado 12-508] No pins matched 'bd_1_i/lvds1to7_RTL_1/inst/rx_channel1/rxc_gen/px_data_reg[*]/D'. [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.srcs/constrs_1/new/constr_1.xdc:81]
+WARNING: [Vivado 12-508] No pins matched 'bd_1_i/lvds1to7_RTL_1/inst/rx_channel1/rxc_gen/px_rd_last_reg[*]/D'. [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.srcs/constrs_1/new/constr_1.xdc:82]
+WARNING: [Vivado 12-508] No pins matched 'bd_1_i/lvds1to7_RTL_1/inst/rx_channel1/rxd[*].sipo/px_data_reg[*]/D'. [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.srcs/constrs_1/new/constr_1.xdc:83]
+WARNING: [Vivado 12-508] No pins matched 'bd_1_i/lvds1to7_RTL_1/inst/rx_channel1/rxd[*].sipo/px_rd_last_reg[*]/D'. [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.srcs/constrs_1/new/constr_1.xdc:84]
+Finished Parsing XDC File [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.srcs/constrs_1/new/constr_1.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.srcs/constrs_1/new/constr_1.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/bd_1_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.srcs/constrs_1/new/constr_1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bd_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2331.980 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2331.980 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'bd_1_i/v_tpg_ss_0/axi_gpio_0' at clock pin 's_axi_aclk' is different from the actual clock period '3.333', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2331.980 ; gain = 595.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu9eg-ffvb1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2331.980 ; gain = 595.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for user_si570_sysclk_clk_n. (constraint file  d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_clk_wiz_0_0/bd_1_clk_wiz_0_0/bd_1_clk_wiz_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for user_si570_sysclk_clk_n. (constraint file  d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_clk_wiz_0_0/bd_1_clk_wiz_0_0/bd_1_clk_wiz_0_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for user_si570_sysclk_clk_p. (constraint file  d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_clk_wiz_0_0/bd_1_clk_wiz_0_0/bd_1_clk_wiz_0_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for user_si570_sysclk_clk_p. (constraint file  d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_clk_wiz_0_0/bd_1_clk_wiz_0_0/bd_1_clk_wiz_0_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for clkin1_n. (constraint file  d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_lvds1to7_RTL_0_0/bd_1_lvds1to7_RTL_0_0/bd_1_lvds1to7_RTL_0_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clkin1_n. (constraint file  d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_lvds1to7_RTL_0_0/bd_1_lvds1to7_RTL_0_0/bd_1_lvds1to7_RTL_0_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for clkin1_p. (constraint file  d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_lvds1to7_RTL_0_0/bd_1_lvds1to7_RTL_0_0/bd_1_lvds1to7_RTL_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clkin1_p. (constraint file  d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_lvds1to7_RTL_0_0/bd_1_lvds1to7_RTL_0_0/bd_1_lvds1to7_RTL_0_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for datain1_n[0]. (constraint file  d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_lvds1to7_RTL_0_0/bd_1_lvds1to7_RTL_0_0/bd_1_lvds1to7_RTL_0_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for datain1_n[0]. (constraint file  d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_lvds1to7_RTL_0_0/bd_1_lvds1to7_RTL_0_0/bd_1_lvds1to7_RTL_0_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for datain1_n[1]. (constraint file  d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_lvds1to7_RTL_0_0/bd_1_lvds1to7_RTL_0_0/bd_1_lvds1to7_RTL_0_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for datain1_n[1]. (constraint file  d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_lvds1to7_RTL_0_0/bd_1_lvds1to7_RTL_0_0/bd_1_lvds1to7_RTL_0_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for datain1_n[2]. (constraint file  d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_lvds1to7_RTL_0_0/bd_1_lvds1to7_RTL_0_0/bd_1_lvds1to7_RTL_0_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for datain1_n[2]. (constraint file  d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_lvds1to7_RTL_0_0/bd_1_lvds1to7_RTL_0_0/bd_1_lvds1to7_RTL_0_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for datain1_n[3]. (constraint file  d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_lvds1to7_RTL_0_0/bd_1_lvds1to7_RTL_0_0/bd_1_lvds1to7_RTL_0_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for datain1_n[3]. (constraint file  d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_lvds1to7_RTL_0_0/bd_1_lvds1to7_RTL_0_0/bd_1_lvds1to7_RTL_0_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for datain1_p[0]. (constraint file  d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_lvds1to7_RTL_0_0/bd_1_lvds1to7_RTL_0_0/bd_1_lvds1to7_RTL_0_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for datain1_p[0]. (constraint file  d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_lvds1to7_RTL_0_0/bd_1_lvds1to7_RTL_0_0/bd_1_lvds1to7_RTL_0_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for datain1_p[1]. (constraint file  d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_lvds1to7_RTL_0_0/bd_1_lvds1to7_RTL_0_0/bd_1_lvds1to7_RTL_0_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for datain1_p[1]. (constraint file  d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_lvds1to7_RTL_0_0/bd_1_lvds1to7_RTL_0_0/bd_1_lvds1to7_RTL_0_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for datain1_p[2]. (constraint file  d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_lvds1to7_RTL_0_0/bd_1_lvds1to7_RTL_0_0/bd_1_lvds1to7_RTL_0_0_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for datain1_p[2]. (constraint file  d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_lvds1to7_RTL_0_0/bd_1_lvds1to7_RTL_0_0/bd_1_lvds1to7_RTL_0_0_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for datain1_p[3]. (constraint file  d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_lvds1to7_RTL_0_0/bd_1_lvds1to7_RTL_0_0/bd_1_lvds1to7_RTL_0_0_in_context.xdc, line 19).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for datain1_p[3]. (constraint file  d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_lvds1to7_RTL_0_0/bd_1_lvds1to7_RTL_0_0/bd_1_lvds1to7_RTL_0_0_in_context.xdc, line 20).
+Applied set_property IO_BUFFER_TYPE = NONE for clkin2_n. (constraint file  d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_lvds1to7_RTL_1_1/bd_1_lvds1to7_RTL_1_1/bd_1_lvds1to7_RTL_1_1_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clkin2_n. (constraint file  d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_lvds1to7_RTL_1_1/bd_1_lvds1to7_RTL_1_1/bd_1_lvds1to7_RTL_1_1_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for clkin2_p. (constraint file  d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_lvds1to7_RTL_1_1/bd_1_lvds1to7_RTL_1_1/bd_1_lvds1to7_RTL_1_1_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clkin2_p. (constraint file  d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_lvds1to7_RTL_1_1/bd_1_lvds1to7_RTL_1_1/bd_1_lvds1to7_RTL_1_1_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for datain2_n[0]. (constraint file  d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_lvds1to7_RTL_1_1/bd_1_lvds1to7_RTL_1_1/bd_1_lvds1to7_RTL_1_1_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for datain2_n[0]. (constraint file  d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_lvds1to7_RTL_1_1/bd_1_lvds1to7_RTL_1_1/bd_1_lvds1to7_RTL_1_1_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for datain2_n[1]. (constraint file  d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_lvds1to7_RTL_1_1/bd_1_lvds1to7_RTL_1_1/bd_1_lvds1to7_RTL_1_1_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for datain2_n[1]. (constraint file  d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_lvds1to7_RTL_1_1/bd_1_lvds1to7_RTL_1_1/bd_1_lvds1to7_RTL_1_1_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for datain2_n[2]. (constraint file  d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_lvds1to7_RTL_1_1/bd_1_lvds1to7_RTL_1_1/bd_1_lvds1to7_RTL_1_1_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for datain2_n[2]. (constraint file  d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_lvds1to7_RTL_1_1/bd_1_lvds1to7_RTL_1_1/bd_1_lvds1to7_RTL_1_1_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for datain2_n[3]. (constraint file  d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_lvds1to7_RTL_1_1/bd_1_lvds1to7_RTL_1_1/bd_1_lvds1to7_RTL_1_1_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for datain2_n[3]. (constraint file  d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_lvds1to7_RTL_1_1/bd_1_lvds1to7_RTL_1_1/bd_1_lvds1to7_RTL_1_1_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for datain2_p[0]. (constraint file  d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_lvds1to7_RTL_1_1/bd_1_lvds1to7_RTL_1_1/bd_1_lvds1to7_RTL_1_1_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for datain2_p[0]. (constraint file  d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_lvds1to7_RTL_1_1/bd_1_lvds1to7_RTL_1_1/bd_1_lvds1to7_RTL_1_1_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for datain2_p[1]. (constraint file  d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_lvds1to7_RTL_1_1/bd_1_lvds1to7_RTL_1_1/bd_1_lvds1to7_RTL_1_1_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for datain2_p[1]. (constraint file  d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_lvds1to7_RTL_1_1/bd_1_lvds1to7_RTL_1_1/bd_1_lvds1to7_RTL_1_1_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for datain2_p[2]. (constraint file  d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_lvds1to7_RTL_1_1/bd_1_lvds1to7_RTL_1_1/bd_1_lvds1to7_RTL_1_1_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for datain2_p[2]. (constraint file  d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_lvds1to7_RTL_1_1/bd_1_lvds1to7_RTL_1_1/bd_1_lvds1to7_RTL_1_1_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for datain2_p[3]. (constraint file  d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_lvds1to7_RTL_1_1/bd_1_lvds1to7_RTL_1_1/bd_1_lvds1to7_RTL_1_1_in_context.xdc, line 19).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for datain2_p[3]. (constraint file  d:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.gen/sources_1/bd/bd_1/ip/bd_1_lvds1to7_RTL_1_1/bd_1_lvds1to7_RTL_1_1/bd_1_lvds1to7_RTL_1_1_in_context.xdc, line 20).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_1_i/v_tpg_ss_0/v_tpg_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_1_i/v_tpg_ss_0/axi_gpio_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_1_i/video_pipe_upscale_0/axi_vdma_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_1_i/video_pipe_upscale_0/axi_gpio_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_1_i/video_pipe_upscale_0/v_proc_ss_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_1_i/video_pipe_upscale_0/axi_smc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_1_i/video_pipe_upscale_0/axi_vdma_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_1_i/video_pipe_upscale_0/axi_smc_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_1_i/video_pipe_downscale_0/axi_vdma_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_1_i/video_pipe_downscale_0/v_proc_ss_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_1_i/video_pipe_downscale_0/axi_gpio_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_1_i/video_pipe_downscale_0/axi_smc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_1_i/zynq_us_ss_0/rst_ps8_0_299M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_1_i/zynq_us_ss_0/rst_ps8_0_99M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_1_i/zynq_us_ss_0/zynq_ultra_ps_e_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_1_i/zynq_us_ss_0/ps8_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_1_i/zynq_us_ss_0/ps8_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_1_i/zynq_us_ss_0/ps8_0_axi_periph/m00_couplers/auto_cc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_1_i/zynq_us_ss_0/ps8_0_axi_periph/m01_couplers/auto_cc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_1_i/zynq_us_ss_0/ps8_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_1_i/clk_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_1_i/vio_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_1_i/util_idelay_ctrl_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_1_i/axis_data_fifo_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_1_i/openldi_to_axis_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_1_i/lvds1to7_RTL_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_1_i/lvds1to7_RTL_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_1_i/openldi_to_axis_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_1_i/axis_data_fifo_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_1_i/util_vector_logic_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_1_i/axis_combiner_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_1_i/system_ila_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2331.980 ; gain = 595.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2331.980 ; gain = 595.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2520 (col length:168)
+BRAMs: 1824 (col length: RAMB18 168 RAMB36 84)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2331.980 ; gain = 595.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'user_si570_sysclk_clk_p'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2749.227 ; gain = 1012.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2749.227 ; gain = 1012.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2762.012 ; gain = 1025.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 2774.785 ; gain = 1038.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 2774.785 ; gain = 1038.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 2774.785 ; gain = 1038.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 2774.785 ; gain = 1038.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 2774.785 ; gain = 1038.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 2774.785 ; gain = 1038.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------------+----------+
+|      |BlackBox name              |Instances |
++------+---------------------------+----------+
+|1     |bd_1_axis_combiner_0_1     |         1|
+|2     |bd_1_axis_data_fifo_0_0    |         1|
+|3     |bd_1_axis_data_fifo_1_0    |         1|
+|4     |bd_1_clk_wiz_0_0           |         1|
+|5     |bd_1_lvds1to7_RTL_0_0      |         1|
+|6     |bd_1_lvds1to7_RTL_1_1      |         1|
+|7     |bd_1_openldi_to_axis_0_0   |         1|
+|8     |bd_1_openldi_to_axis_1_0   |         1|
+|9     |bd_1_system_ila_0_0        |         1|
+|10    |bd_1_util_idelay_ctrl_0_0  |         1|
+|11    |bd_1_util_vector_logic_0_0 |         1|
+|12    |bd_1_vio_0_0               |         1|
+|13    |bd_1_axi_gpio_0_0          |         1|
+|14    |bd_1_v_tpg_0_0             |         1|
+|15    |bd_1_axi_gpio_0_2          |         1|
+|16    |bd_1_axi_smc_3             |         1|
+|17    |bd_1_axi_vdma_0_1          |         1|
+|18    |bd_1_v_proc_ss_0_1         |         1|
+|19    |bd_1_axi_gpio_0_1          |         1|
+|20    |bd_1_axi_smc_2             |         1|
+|21    |bd_1_axi_smc_1_0           |         1|
+|22    |bd_1_axi_vdma_0_0          |         1|
+|23    |bd_1_axi_vdma_1_0          |         1|
+|24    |bd_1_v_proc_ss_0_0         |         1|
+|25    |bd_1_xbar_0                |         1|
+|26    |bd_1_auto_cc_0             |         1|
+|27    |bd_1_auto_cc_1             |         1|
+|28    |bd_1_auto_pc_0             |         1|
+|29    |bd_1_rst_ps8_0_299M_3      |         1|
+|30    |bd_1_rst_ps8_0_99M_3       |         1|
+|31    |bd_1_zynq_ultra_ps_e_0_0   |         1|
++------+---------------------------+----------+
+
+Report Cell Usage: 
++------+-------------------------+------+
+|      |Cell                     |Count |
++------+-------------------------+------+
+|1     |bd_1_auto_cc             |     2|
+|3     |bd_1_auto_pc             |     1|
+|4     |bd_1_axi_gpio_0          |     3|
+|7     |bd_1_axi_smc_1           |     1|
+|8     |bd_1_axi_smc             |     2|
+|10    |bd_1_axi_vdma_0          |     2|
+|12    |bd_1_axi_vdma_1          |     1|
+|13    |bd_1_axis_combiner_0     |     1|
+|14    |bd_1_axis_data_fifo_0    |     1|
+|15    |bd_1_axis_data_fifo_1    |     1|
+|16    |bd_1_clk_wiz_0           |     1|
+|17    |bd_1_lvds1to7_RTL_0      |     1|
+|18    |bd_1_lvds1to7_RTL_1      |     1|
+|19    |bd_1_openldi_to_axis_0   |     1|
+|20    |bd_1_openldi_to_axis_1   |     1|
+|21    |bd_1_rst_ps8_0_299M      |     1|
+|22    |bd_1_rst_ps8_0_99M       |     1|
+|23    |bd_1_system_ila_0        |     1|
+|24    |bd_1_util_idelay_ctrl_0  |     1|
+|25    |bd_1_util_vector_logic_0 |     1|
+|26    |bd_1_v_proc_ss_0         |     2|
+|28    |bd_1_v_tpg_0             |     1|
+|29    |bd_1_vio_0               |     1|
+|30    |bd_1_xbar                |     1|
+|31    |bd_1_zynq_ultra_ps_e_0   |     1|
++------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 2774.785 ; gain = 1038.410
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 16 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 2774.785 ; gain = 999.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 2774.785 ; gain = 1038.410
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 2774.785 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2774.785 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: c21a778a
+INFO: [Common 17-83] Releasing license: Synthesis
+129 Infos, 241 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 2774.785 ; gain = 2035.754
+INFO: [Common 17-1381] The checkpoint 'D:/WGRB/OLDI/03-pl-design-zcu102videoUSB_develop_us_oldi/zcu102UsbvideoFULL.runs/synth_1/bd_1_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file bd_1_wrapper_utilization_synth.rpt -pb bd_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Aug  5 04:38:07 2026...

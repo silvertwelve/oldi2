@@ -1,0 +1,91 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.592048",
+   "Default View_TopLeft":"899,-407",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.7.1 2023-07-26 3bc4126617 VDI=43 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port user_si570_sysclk -pg 1 -lvl 0 -x -30 -y 430 -defaultsOSRD
+preplace port port-id_clkin1_p -pg 1 -lvl 0 -x -30 -y 350 -defaultsOSRD
+preplace port port-id_clkin1_n -pg 1 -lvl 0 -x -30 -y 370 -defaultsOSRD
+preplace port port-id_clkin2_p -pg 1 -lvl 0 -x -30 -y 170 -defaultsOSRD
+preplace port port-id_clkin2_n -pg 1 -lvl 0 -x -30 -y 190 -defaultsOSRD
+preplace portBus datain1_n -pg 1 -lvl 0 -x -30 -y 100 -defaultsOSRD
+preplace portBus datain1_p -pg 1 -lvl 0 -x -30 -y 120 -defaultsOSRD
+preplace portBus datain2_p -pg 1 -lvl 0 -x -30 -y 210 -defaultsOSRD
+preplace portBus datain2_n -pg 1 -lvl 0 -x -30 -y 230 -defaultsOSRD
+preplace inst v_tpg_ss_0 -pg 1 -lvl 11 -x 5209 -y 200 -defaultsOSRD
+preplace inst video_pipe_upscale_0 -pg 1 -lvl 9 -x 2860 -y 352 -defaultsOSRD
+preplace inst video_pipe_downscale_0 -pg 1 -lvl 11 -x 5209 -y 410 -defaultsOSRD
+preplace inst zynq_us_ss_0 -pg 1 -lvl 10 -x 4780 -y 310 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 2 -x 540 -y 430 -defaultsOSRD
+preplace inst vio_0 -pg 1 -lvl 5 -x 1560 -y 240 -defaultsOSRD
+preplace inst util_idelay_ctrl_0 -pg 1 -lvl 3 -x 830 -y 370 -defaultsOSRD
+preplace inst axis_data_fifo_0 -pg 1 -lvl 7 -x 2150 -y 340 -defaultsOSRD
+preplace inst openldi_to_axis_0 -pg 1 -lvl 6 -x 1870 -y 370 -defaultsOSRD
+preplace inst lvds1to7_RTL_0 -pg 1 -lvl 4 -x 1170 -y 330 -defaultsOSRD
+preplace inst lvds1to7_RTL_1 -pg 1 -lvl 1 -x 180 -y 220 -defaultsOSRD
+preplace inst openldi_to_axis_1 -pg 1 -lvl 6 -x 1870 -y 120 -defaultsOSRD
+preplace inst axis_data_fifo_1 -pg 1 -lvl 7 -x 2150 -y 180 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 2 -x 540 -y 280 -defaultsOSRD
+preplace inst axis_combiner_0 -pg 1 -lvl 8 -x 2510 -y 350 -defaultsOSRD
+preplace inst system_ila_0 -pg 1 -lvl 8 -x 2510 -y 30 -defaultsOSRD
+preplace netloc axis_data_fifo_0_almost_empty 1 7 1 2290 50n
+preplace netloc axis_data_fifo_0_almost_full 1 7 1 2310 70n
+preplace netloc axis_data_fifo_1_almost_empty 1 7 1 2280 10n
+preplace netloc axis_data_fifo_1_almost_full 1 7 1 2320 30n
+preplace netloc clk_wiz_0_clk_out300 1 2 3 740 200 NJ 200 NJ
+preplace netloc clkin1_n_1 1 0 4 -10J 360 NJ 360 700J 300 NJ
+preplace netloc clkin1_p_1 1 0 4 NJ 350 NJ 350 710J 280 NJ
+preplace netloc clkin2_n_1 1 0 1 NJ 190
+preplace netloc clkin2_p_1 1 0 1 NJ 170
+preplace netloc datain1_n_1 1 0 4 -10J 80 NJ 80 NJ 80 950J
+preplace netloc datain1_p_1 1 0 4 0J 90 NJ 90 NJ 90 940J
+preplace netloc datain2_n_1 1 0 1 NJ 230
+preplace netloc datain2_p_1 1 0 1 NJ 210
+preplace netloc lvds1to7_RTL_0_cmt_locked 1 4 1 1330 220n
+preplace netloc lvds1to7_RTL_0_idelay_ctrl_reset 1 1 4 390 210 690J 220 NJ 220 1320
+preplace netloc lvds1to7_RTL_0_px_clk 1 4 3 1360 340 1740 250 2000
+preplace netloc lvds1to7_RTL_0_px_data 1 4 2 1360 390 NJ
+preplace netloc lvds1to7_RTL_0_px_ready 1 4 1 1350 240n
+preplace netloc lvds1to7_RTL_1_cmt_locked 1 1 4 NJ 180 NJ 180 NJ 180 1360
+preplace netloc lvds1to7_RTL_1_idelay_ctrl_reset 1 1 1 330 260n
+preplace netloc lvds1to7_RTL_1_px_clk 1 1 6 340 110 NJ 110 NJ 110 NJ 110 1740 240 2000J
+preplace netloc lvds1to7_RTL_1_px_data 1 1 5 350 130 NJ 130 NJ 130 NJ 130 1710J
+preplace netloc lvds1to7_RTL_1_px_ready 1 1 4 NJ 200 710J 210 NJ 210 1340
+preplace netloc rst_ps8_0_299M_peripheral_aresetn 1 8 3 2700 490 NJ 490 5020
+preplace netloc rst_ps8_0_99M_peripheral_aresetn 1 8 3 2720 480 NJ 480 4970
+preplace netloc util_idelay_ctrl_0_rdy 1 0 4 20 100 NJ 100 NJ 100 930
+preplace netloc util_vector_logic_0_Res 1 2 1 690 280n
+preplace netloc vio_0_probe_out0 1 5 3 1700 0 2010 90 2300J
+preplace netloc vio_0_probe_out2 1 0 6 30 110 330J 120 NJ 120 920 140 NJ 140 1690
+preplace netloc xlconstant_0_dout 1 5 1 1730 120n
+preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 8 3 2690 500 NJ 500 5000
+preplace netloc zynq_ultra_ps_e_0_pl_clk1 1 6 5 2020 80 2340 260 2670 510 NJ 510 5030
+preplace netloc axis_combiner_0_M_AXIS 1 7 2 2350 230 2680
+preplace netloc axis_data_fifo_0_M_AXIS 1 7 1 N 320
+preplace netloc axis_data_fifo_1_M_AXIS 1 7 1 2330 160n
+preplace netloc openldi_to_axis_0_axis 1 6 1 N 310
+preplace netloc openldi_to_axis_1_axis 1 6 1 2000 60n
+preplace netloc ps8_0_axi_periph_M00_AXI 1 10 1 N 190
+preplace netloc ps8_0_axi_periph_M01_AXI 1 10 1 5020 170n
+preplace netloc ps8_0_axi_periph_M02_AXI 1 10 1 4990 230n
+preplace netloc ps8_0_axi_periph_M03_AXI 1 10 1 5010 250n
+preplace netloc ps8_0_axi_periph_M04_AXI 1 10 1 5000 270n
+preplace netloc ps8_0_axi_periph_M05_AXI 1 8 3 2720 100 NJ 100 4970
+preplace netloc ps8_0_axi_periph_M06_AXI 1 8 3 2700 120 NJ 120 4950
+preplace netloc ps8_0_axi_periph_M07_AXI 1 8 3 2710 130 NJ 130 4960
+preplace netloc user_si570_sysclk_1 1 0 2 NJ 430 NJ
+preplace netloc video_pipe_downscale_0_M00_AXI 1 9 3 4610 110 NJ 110 5360
+preplace netloc video_pipe_upscale_0_M00_AXI 1 9 1 3000 290n
+preplace netloc video_pipe_upscale_0_M00_AXI1 1 9 1 3010 330n
+preplace netloc zynq_us_ss_0_M08_AXI 1 8 3 2690 90 NJ 90 4980
+levelinfo -pg 1 -30 180 540 830 1170 1560 1870 2150 2510 2860 4780 5209 5380
+pagesize -pg 1 -db -bbox -sgen -210 -220 5470 980
+"
+}
+{
+   "da_axi4_cnt":"24",
+   "da_clkrst_cnt":"2",
+   "da_zynq_ultra_ps_e_cnt":"1"
+}

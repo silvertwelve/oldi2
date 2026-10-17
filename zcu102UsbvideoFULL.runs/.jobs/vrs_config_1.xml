@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="bd_054c_input_size_set_0_synth_1" LaunchDir="D:/vivadoProj/zcu102UsbvideoFULL/zcu102UsbvideoFULL.runs/bd_054c_input_size_set_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_054c_rst_axis_0_synth_1" LaunchDir="D:/vivadoProj/zcu102UsbvideoFULL/zcu102UsbvideoFULL.runs/bd_054c_rst_axis_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_1_axi_vdma_1_0_synth_1" LaunchDir="D:/vivadoProj/zcu102UsbvideoFULL/zcu102UsbvideoFULL.runs/bd_1_axi_vdma_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_1_axi_smc_2_synth_1" LaunchDir="D:/vivadoProj/zcu102UsbvideoFULL/zcu102UsbvideoFULL.runs/bd_1_axi_smc_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_1_zynq_ultra_ps_e_0_0_synth_1" LaunchDir="D:/vivadoProj/zcu102UsbvideoFULL/zcu102UsbvideoFULL.runs/bd_1_zynq_ultra_ps_e_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_1_v_tpg_0_0_synth_1" LaunchDir="D:/vivadoProj/zcu102UsbvideoFULL/zcu102UsbvideoFULL.runs/bd_1_v_tpg_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_1_axi_vdma_0_0_synth_1" LaunchDir="D:/vivadoProj/zcu102UsbvideoFULL/zcu102UsbvideoFULL.runs/bd_1_axi_vdma_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_1_axi_gpio_0_0_synth_1" LaunchDir="D:/vivadoProj/zcu102UsbvideoFULL/zcu102UsbvideoFULL.runs/bd_1_axi_gpio_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_c58d_axis_fifo_0_synth_1" LaunchDir="D:/vivadoProj/zcu102UsbvideoFULL/zcu102UsbvideoFULL.runs/bd_c58d_axis_fifo_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_c58d_vsc_0_synth_1" LaunchDir="D:/vivadoProj/zcu102UsbvideoFULL/zcu102UsbvideoFULL.runs/bd_c58d_vsc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_c58d_input_size_set_0_synth_1" LaunchDir="D:/vivadoProj/zcu102UsbvideoFULL/zcu102UsbvideoFULL.runs/bd_c58d_input_size_set_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_c58d_reset_sel_axis_0_synth_1" LaunchDir="D:/vivadoProj/zcu102UsbvideoFULL/zcu102UsbvideoFULL.runs/bd_c58d_reset_sel_axis_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_c58d_axis_register_slice_0_0_synth_1" LaunchDir="D:/vivadoProj/zcu102UsbvideoFULL/zcu102UsbvideoFULL.runs/bd_c58d_axis_register_slice_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_c58d_hsc_0_synth_1" LaunchDir="D:/vivadoProj/zcu102UsbvideoFULL/zcu102UsbvideoFULL.runs/bd_c58d_hsc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_c58d_rst_axis_0_synth_1" LaunchDir="D:/vivadoProj/zcu102UsbvideoFULL/zcu102UsbvideoFULL.runs/bd_c58d_rst_axis_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="bd_054c_rst_axis_0_synth_1"/>
+	</Run>
+	<Run Id="bd_c58d_smartconnect_0_0_synth_1" LaunchDir="D:/vivadoProj/zcu102UsbvideoFULL/zcu102UsbvideoFULL.runs/bd_c58d_smartconnect_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_1_axi_smc_3_synth_1" LaunchDir="D:/vivadoProj/zcu102UsbvideoFULL/zcu102UsbvideoFULL.runs/bd_1_axi_smc_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_1_axis_broadcaster_0_0_synth_1" LaunchDir="D:/vivadoProj/zcu102UsbvideoFULL/zcu102UsbvideoFULL.runs/bd_1_axis_broadcaster_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_1_axi_smc_1_0_synth_1" LaunchDir="D:/vivadoProj/zcu102UsbvideoFULL/zcu102UsbvideoFULL.runs/bd_1_axi_smc_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_1_xbar_0_synth_1" LaunchDir="D:/vivadoProj/zcu102UsbvideoFULL/zcu102UsbvideoFULL.runs/bd_1_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_1_axi_vdma_0_1_synth_1" LaunchDir="D:/vivadoProj/zcu102UsbvideoFULL/zcu102UsbvideoFULL.runs/bd_1_axi_vdma_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="bd_1_axi_vdma_1_0_synth_1"/>
+	</Run>
+	<Run Id="bd_1_v_proc_ss_0_1_synth_1" LaunchDir="D:/vivadoProj/zcu102UsbvideoFULL/zcu102UsbvideoFULL.runs/bd_1_v_proc_ss_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="bd_c58d_axis_fifo_0_synth_1"/>
+		<Parent Id="bd_c58d_vsc_0_synth_1"/>
+		<Parent Id="bd_c58d_input_size_set_0_synth_1"/>
+		<Parent Id="bd_c58d_reset_sel_axis_0_synth_1"/>
+		<Parent Id="bd_c58d_axis_register_slice_0_0_synth_1"/>
+		<Parent Id="bd_c58d_hsc_0_synth_1"/>
+		<Parent Id="bd_c58d_rst_axis_0_synth_1"/>
+		<Parent Id="bd_c58d_smartconnect_0_0_synth_1"/>
+	</Run>
+	<Run Id="bd_1_rst_ps8_0_99M_3_synth_1" LaunchDir="D:/vivadoProj/zcu102UsbvideoFULL/zcu102UsbvideoFULL.runs/bd_1_rst_ps8_0_99M_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_1_axi_gpio_0_2_synth_1" LaunchDir="D:/vivadoProj/zcu102UsbvideoFULL/zcu102UsbvideoFULL.runs/bd_1_axi_gpio_0_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_1_v_proc_ss_0_0_synth_1" LaunchDir="D:/vivadoProj/zcu102UsbvideoFULL/zcu102UsbvideoFULL.runs/bd_1_v_proc_ss_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="bd_054c_input_size_set_0_synth_1"/>
+		<Parent Id="bd_054c_rst_axis_0_synth_1"/>
+		<Parent Id="bd_054c_smartconnect_0_0_synth_1"/>
+		<Parent Id="bd_054c_vsc_0_synth_1"/>
+		<Parent Id="bd_054c_hsc_0_synth_1"/>
+		<Parent Id="bd_054c_reset_sel_axis_0_synth_1"/>
+		<Parent Id="bd_054c_axis_register_slice_0_0_synth_1"/>
+		<Parent Id="bd_054c_axis_fifo_0_synth_1"/>
+	</Run>
+	<Run Id="bd_1_axi_gpio_0_1_synth_1" LaunchDir="D:/vivadoProj/zcu102UsbvideoFULL/zcu102UsbvideoFULL.runs/bd_1_axi_gpio_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="bd_1_axi_gpio_0_2_synth_1"/>
+	</Run>
+	<Run Id="bd_1_rst_ps8_0_299M_3_synth_1" LaunchDir="D:/vivadoProj/zcu102UsbvideoFULL/zcu102UsbvideoFULL.runs/bd_1_rst_ps8_0_299M_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="bd_054c_rst_axis_0_synth_1"/>
+	</Run>
+	<Run Id="bd_054c_smartconnect_0_0_synth_1" LaunchDir="D:/vivadoProj/zcu102UsbvideoFULL/zcu102UsbvideoFULL.runs/bd_054c_smartconnect_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_054c_vsc_0_synth_1" LaunchDir="D:/vivadoProj/zcu102UsbvideoFULL/zcu102UsbvideoFULL.runs/bd_054c_vsc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="bd_c58d_vsc_0_synth_1"/>
+	</Run>
+	<Run Id="bd_054c_hsc_0_synth_1" LaunchDir="D:/vivadoProj/zcu102UsbvideoFULL/zcu102UsbvideoFULL.runs/bd_054c_hsc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="bd_c58d_hsc_0_synth_1"/>
+	</Run>
+	<Run Id="bd_054c_reset_sel_axis_0_synth_1" LaunchDir="D:/vivadoProj/zcu102UsbvideoFULL/zcu102UsbvideoFULL.runs/bd_054c_reset_sel_axis_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="bd_c58d_reset_sel_axis_0_synth_1"/>
+	</Run>
+	<Run Id="bd_054c_axis_register_slice_0_0_synth_1" LaunchDir="D:/vivadoProj/zcu102UsbvideoFULL/zcu102UsbvideoFULL.runs/bd_054c_axis_register_slice_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="bd_c58d_axis_register_slice_0_0_synth_1"/>
+	</Run>
+	<Run Id="bd_054c_axis_fifo_0_synth_1" LaunchDir="D:/vivadoProj/zcu102UsbvideoFULL/zcu102UsbvideoFULL.runs/bd_054c_axis_fifo_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="bd_c58d_axis_fifo_0_synth_1"/>
+	</Run>
+	<Run Id="bd_1_auto_cc_0_synth_1" LaunchDir="D:/vivadoProj/zcu102UsbvideoFULL/zcu102UsbvideoFULL.runs/bd_1_auto_cc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_1_auto_pc_0_synth_1" LaunchDir="D:/vivadoProj/zcu102UsbvideoFULL/zcu102UsbvideoFULL.runs/bd_1_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_1_auto_cc_1_synth_1" LaunchDir="D:/vivadoProj/zcu102UsbvideoFULL/zcu102UsbvideoFULL.runs/bd_1_auto_cc_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="D:/vivadoProj/zcu102UsbvideoFULL/zcu102UsbvideoFULL.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="bd_1_axi_vdma_1_0_synth_1"/>
+		<Parent Id="bd_1_axi_smc_2_synth_1"/>
+		<Parent Id="bd_1_zynq_ultra_ps_e_0_0_synth_1"/>
+		<Parent Id="bd_1_v_tpg_0_0_synth_1"/>
+		<Parent Id="bd_1_axi_vdma_0_0_synth_1"/>
+		<Parent Id="bd_1_axi_gpio_0_0_synth_1"/>
+		<Parent Id="bd_1_axi_smc_3_synth_1"/>
+		<Parent Id="bd_1_axis_broadcaster_0_0_synth_1"/>
+		<Parent Id="bd_1_axi_smc_1_0_synth_1"/>
+		<Parent Id="bd_1_xbar_0_synth_1"/>
+		<Parent Id="bd_1_axi_vdma_0_1_synth_1"/>
+		<Parent Id="bd_1_v_proc_ss_0_1_synth_1"/>
+		<Parent Id="bd_1_rst_ps8_0_99M_3_synth_1"/>
+		<Parent Id="bd_1_axi_gpio_0_2_synth_1"/>
+		<Parent Id="bd_1_v_proc_ss_0_0_synth_1"/>
+		<Parent Id="bd_1_axi_gpio_0_1_synth_1"/>
+		<Parent Id="bd_1_rst_ps8_0_299M_3_synth_1"/>
+		<Parent Id="bd_1_auto_cc_0_synth_1"/>
+		<Parent Id="bd_1_auto_pc_0_synth_1"/>
+		<Parent Id="bd_1_auto_cc_1_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="D:/vivadoProj/zcu102UsbvideoFULL/zcu102UsbvideoFULL.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="bd_054c_input_size_set_0_synth_1"/>
+		<Parent Id="bd_054c_rst_axis_0_synth_1"/>
+		<Parent Id="bd_1_axi_vdma_1_0_synth_1"/>
+		<Parent Id="bd_1_axi_smc_2_synth_1"/>
+		<Parent Id="bd_1_zynq_ultra_ps_e_0_0_synth_1"/>
+		<Parent Id="bd_1_v_tpg_0_0_synth_1"/>
+		<Parent Id="bd_1_axi_vdma_0_0_synth_1"/>
+		<Parent Id="bd_1_axi_gpio_0_0_synth_1"/>
+		<Parent Id="bd_c58d_axis_fifo_0_synth_1"/>
+		<Parent Id="bd_c58d_vsc_0_synth_1"/>
+		<Parent Id="bd_c58d_input_size_set_0_synth_1"/>
+		<Parent Id="bd_c58d_reset_sel_axis_0_synth_1"/>
+		<Parent Id="bd_c58d_axis_register_slice_0_0_synth_1"/>
+		<Parent Id="bd_c58d_hsc_0_synth_1"/>
+		<Parent Id="bd_c58d_rst_axis_0_synth_1"/>
+		<Parent Id="bd_c58d_smartconnect_0_0_synth_1"/>
+		<Parent Id="bd_1_axi_smc_3_synth_1"/>
+		<Parent Id="bd_1_axis_broadcaster_0_0_synth_1"/>
+		<Parent Id="bd_1_axi_smc_1_0_synth_1"/>
+		<Parent Id="bd_1_xbar_0_synth_1"/>
+		<Parent Id="bd_1_axi_vdma_0_1_synth_1"/>
+		<Parent Id="bd_1_v_proc_ss_0_1_synth_1"/>
+		<Parent Id="bd_1_rst_ps8_0_99M_3_synth_1"/>
+		<Parent Id="bd_1_axi_gpio_0_2_synth_1"/>
+		<Parent Id="bd_1_v_proc_ss_0_0_synth_1"/>
+		<Parent Id="bd_1_axi_gpio_0_1_synth_1"/>
+		<Parent Id="bd_1_rst_ps8_0_299M_3_synth_1"/>
+		<Parent Id="bd_054c_smartconnect_0_0_synth_1"/>
+		<Parent Id="bd_054c_vsc_0_synth_1"/>
+		<Parent Id="bd_054c_hsc_0_synth_1"/>
+		<Parent Id="bd_054c_reset_sel_axis_0_synth_1"/>
+		<Parent Id="bd_054c_axis_register_slice_0_0_synth_1"/>
+		<Parent Id="bd_054c_axis_fifo_0_synth_1"/>
+		<Parent Id="bd_1_auto_cc_0_synth_1"/>
+		<Parent Id="bd_1_auto_pc_0_synth_1"/>
+		<Parent Id="bd_1_auto_cc_1_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+		<Parameter Name="general.shortenLongPath" Val="true" Type="bool"/>
+	</Parameters>
+	<ProductInfo Name="vivado"/>
+</Runs>
+
